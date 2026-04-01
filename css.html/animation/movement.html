@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .box{
+         width: 50px;   
+         height: 50px;
+         background-color: blue;
+         border: 2px solid;
+         position: absolute;
+         animation: move 2s linear infinite forwards;
+
+        }
+    
+         @keyframes move{
+            0%{
+               top: 0px;left: 0px;
+               
+            }
+            25%{
+               top: 0px;left: 500px;
+              
+            }
+            50%{
+                 top:500px;left:500px;
+                
+            }
+            75%{
+                 top: 500px;left: 0px;
+                 
+            }
+            100%{
+                 top: 0px;left: 0px; 
+                 
+            }
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
