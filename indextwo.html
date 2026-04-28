@@ -1,24 +1,52 @@
-fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-  .then(res => res.json())
-  .then(data => {
+async function sendMessage() { let input = document.getElementById("input"); let chat = document.getElementById("chat");
 
-    document.getElementById("title").innerText = data.title;
+let userText = input.value;
 
-    document.getElementById("desc").innerText = data.explanation;
+chat.innerHTML += "<p><b>You: </b> " + userText + "</p>";
 
-    if (data.media_type === "image") {
-      document.getElementById("img").src = data.url;
-      document.getElementById("img").style.display = "block";
-    } 
-    else {
-      document.getElementById("img").style.display = "none";
+input.value = "";
 
-      document.getElementById("desc").innerText += 
-        "\n\n🚀 Today NASA data is a VIDEO. Try refreshing tomorrow.";
-    }
+chat.innerHTML += "<p><b>Bot: </b> typing...</p>";
 
-  })
-  .catch(err => {
-    console.log(err);
-    document.getElementById("title").innerText = "Error loading NASA data";
-  });
+let res await
+
+fetch("https://api.openai.com/v1/chat /completions", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer YOUR_API_KEY" },
+
+body: JSON.stringify({
+
+model: "gpt-3.5-turbo",
+
+messages: [ { role: "system",
+content: "You are a space expert.
+
+Answer only space-related questions in
+
+simple language."
+
+},
+
+{
+
+role: "user",
+
+content: userText
+
+}
+
+]
+
+})
+
+});
+
+let data await res.json();
+
+let reply =
+
+data.choices[0].message.content;
+
+chat.innerHTML += "<p><b>Bot: </b> " +
+
+reply + "</p>";
+
+}
