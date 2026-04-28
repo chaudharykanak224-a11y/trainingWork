@@ -1,1 +1,24 @@
+fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+  .then(res => res.json())
+  .then(data => {
 
+    document.getElementById("title").innerText = data.title;
+
+    document.getElementById("desc").innerText = data.explanation;
+
+    if (data.media_type === "image") {
+      document.getElementById("img").src = data.url;
+      document.getElementById("img").style.display = "block";
+    } 
+    else {
+      document.getElementById("img").style.display = "none";
+
+      document.getElementById("desc").innerText += 
+        "\n\n🚀 Today NASA data is a VIDEO. Try refreshing tomorrow.";
+    }
+
+  })
+  .catch(err => {
+    console.log(err);
+    document.getElementById("title").innerText = "Error loading NASA data";
+  });
