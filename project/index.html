@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space app</title>
+    <style>
+        body{
+            background-color: radial-gradient(circle,#0b0f2a, #000);
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+        h1{
+            color: cyan;
+
+        }
+        img{
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        input{
+            padding: 5px;
+            margin-top: 10px;
+
+        }
+        button{
+            padding: 5px 10px;
+            background-color: cyan;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Space Assistant</h1>
+          <!-- space info  -->
+        <h2 id="title">Space title</h2>
+        <img id="img"    width="250">
+        <p>Data by NASA</p>
+        <p id="desc">Description</p>
+
+        <!-- chatbot  -->
+         <input type="text" id="input" placeholder="ask anything">
+         <button onclick="sendMessage()">send</button>
+         <div id="chat"></div>
+   
+</body>
+  <script src="script.js"></script>
+</html>
