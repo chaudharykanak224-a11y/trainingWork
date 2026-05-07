@@ -6,7 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-   
+   <div class="parent">
+    <span>Hello span </span>
+    <p>Hello p </p>
+    <h1>Hello h1 </h1>
+   </div>
 </body>
 <script>
 //    const div = document.createElement("div");
@@ -15,11 +19,53 @@
 // //    div.appendchild("p");
 //    document.body.appendChild("div");
 
-   const div = document.createElement("div");
-   const p =document.createElement("p")
-   p.innerText="hello world"
-   div.appendChild(p)
-   document.body.appendChild(div);
+//    const div = document.createElement("div");
+//    const p =document.createElement("p")
+//    p.innerText="hello world"
+//    div.appendChild(p)
+//    document.body.appendChild(div);
+
+const parent = document.querySelector(".parent");
+console.log(parent.lastElementChild);
+console.log('parent:',parent);
    
 </script>
 </html>
+
+
+
+
+
+
+
+
+<!-- we can access parent fron dom  -->
+ <!-- h.w make a <parent div >        parent.nextsibling if we want parent ssibling -->
+ <!-- span  -->
+ <!-- <p></p>     hw  -->
+ <!-- <h1></h1> -->
+ <!-- </div> -->
+  <!-- /child nodes -->
+   <!-- make btn <p></p>   id = btn         in js btn = doc.get id ('id') , btn.addeventlistner ('click', fun(){
+                                         log("hlo");
+   }) 
+   log(byy)
+   /script 
+
+   click to remove p btn 
+    when we click that btn it will remove   
+
+script 
+p = doc.createelement ("p");
+p.innertext = hw;
+doc.body.append(p)
+
+
+2. remove btn 
+id = remove
+remove.oddeventlist('click',()=>{
+    remove.log()
+} -->
+    <!-- event loop do all this work  -->
+      
+
