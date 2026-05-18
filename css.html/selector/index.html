@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div > p{
+         color: red;
+        } */
+          /* .maindiv > p{
+            color: red;
+          } */
+
+          /* h1 + span{
+            color: red;
+          }                                give color only one span 
+           */                                 
+          /* h1 ~ span{
+            color: red;                      give color all span 
+          } */      
+           
+          /* h1 ~ p{
+            color: red;
+          } */
+
+          *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+          }
+           /* div{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+           }        */
+           body{
+            width: 100%;
+            border: 1px solid black;
+           }
+            .maindiv{
+                width: 300px;
+                height: 200px;
+                margin: 20px;
+                padding: 30px;
+                display: flex;
+                    justify-content: center;
+              align-items: center;
+                gap: 30px;  
+            }
+           .one{
+           background-color: brown;
+           width: 50px;
+           height: 50px;
+           color: white;
+           }
+           .two:hover{
+
+           }
+           .two{
+              background-color: rgb(28, 34, 222);
+           width: 50px;
+           height: 50px;
+           color: white;
+           }
+           .three{
+              background-color: rgb(165, 29, 206);
+           width: 50px;
+           height: 50px;
+           color: white;
+           }
+    </style>
+</head>
+<body>
+    <!-- <div class="maindiv">
+        <p>outer p</p>
+        <span>hello span</span>
+        <div>
+            <p>inner p</p>
+            <span>inner span</span>
+        </div>
+    </div> -->
+    <!-- <div>
+        <h1>hlo</h1>
+        <span>span</span>
+        <span>span</span>
+        <span>span</span>
+        <p>para</p>
+    </div> -->
+    <!-- <p>hello para</p>
+    <span>hlo span</span>
+    <div></div> -->
+      <div class="maindiv">
+
+          <div class="one">one</div>
+          <div class="two">two</div>
+          <div class="three">three</div>
+      </div>
+</body>
+</html>

@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* p::first-letter{
+         /* p::first-letter{
             color: red;
             font-size: 20px;
         } */
         /* p::first-line{
             color: red;
         } */
+         
          /* p::selection{
             color: blueviolet;
          } */
           /* ul > li::marker{
             color: red;
           } */
-           p::after{
+          li::marker{
+            color: blueviolet;
+          }
+           /* p::after{
             content: "frutii";
            }
+
+           p::before{
+            content: "hello";
+            color: red;
+            font-size: 30px;
+           }
+           input::placeholder{
+             color: red;
+           } */
 
     </style>
 </head>
 <body>
+  
     <ul>
         <li>hehehehehe</li>
         <li>hehehehehe</li>
@@ -32,5 +46,6 @@
         <li>hehehehehe</li>
     </ul>
     <p>hello cutiee</p>
+    <input type="text" placeholder="Enter your name">
 </body>
 </html>

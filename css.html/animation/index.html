@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            animation-name: ten;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            /* easyin,easyout */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-direction: reverse;
+        }
+
+        @keyframes ten{
+            from{
+                background-color: blue;
+            }
+            to{
+              background-color: aliceblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+</body>
+</html>
+    <!-- <style> -->
         /* div{
             border: 1px solid black;
             width: 50px;
@@ -21,7 +50,7 @@
            animation-iteration-count: infinite;
            animation-direction: alternate-reverse; */
 
-           animation: spinner 2s linear infinite alternate;
+          
 /* 
         }
          
@@ -34,7 +63,7 @@
             }
         } */ 
           
-        .div1{
+        /* .div1{
           display: flex;
     align-content: center;
     justify-content: center;
@@ -43,15 +72,15 @@
         }
         div{
             
-        }
+        } */
       
-    </style>
+    <!-- /* </style>
 </head>
 <body>
    <div>
     <div class="div1">
         <i class="fa-brands fa-whatsapp fa-2xl" style="color: rgb(39, 192, 71);"></i>
     </div>
-   </div> 
-</body>
-</html>
+   </div>  -->
+<!-- </body>
+</html> */ -->
