@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <style>
+        /* .relative{
+           font-size: 5vw;
+        }
+        .absolute{
+          font-size: 40px;
+        } */
+         html{
+            /* font-size: 16px; */
+            font-size: 2rem;
+            /* 1rem = 16px  */
+         }
+         .parent{
+            font-size: 3rem;
+           
+            /* font-size: 10px; */
+            /* 1em= 10px */
+         }
+         .child{
+          font-size: 3rem;
+         /* font-size: 3em; */
+         }
+         .grandchild{
+            font-size: 3rem;
+            /* font-size: 3em; */
+         }
+    </style>
+</head>
+<body>
+    <!-- <div class="relative">
+        <h1>hello relative</h1>
+    </div>
+    <div class="absolute">
+        <h1>hello absolute </h1>
+    </div> -->
+
+    <div class="parent">
+           parent 
+    </div>
+    <div class="child">
+         child 
+         <div class="grandchild">
+            grandchild
+         </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- px , vw , vh , % , cm , inch , vmin, vmax, rem,  -->
+ <!-- px ,vw ,  vh , % , rem , em  -->
+  <!-- units 2 types ke hote hai 
+    -->
+  <!-- absolute px - jitna size doge utna he rhega chaiye screen ki width kam ho ya jyada -->
+   <!-- relative % - parent badega to % grow hoga kam hoga to increse hoga -->
+    <!-- 1vw,1vh = 1% of width and height  -->
+     <!-- rem, em -  -->
+     <!-- em- size leta hai aapne parent ka   -->
+      <!-- rem - root element se relate krti hai jaise html  -->
